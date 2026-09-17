@@ -1,0 +1,73 @@
+/* 全域頁面排版 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f6f8fa;
+    color: #24292f;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 主容器寬度限制 */
+.container {
+    width: 100%;
+    max-width: 720px;
+}
+
+/* 主標題樣式 */
+h1 {
+    font-size: 24px;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+/* 應用程式清單排版 */
+.app-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* 應用程式項目卡片 */
+.app-card {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.app-card:hover {
+    border-color: #0969da;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 應用程式名稱文字 */
+.app-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0969da;
+}
+
+/* 右側標籤樣式 */
+.status-badge {
+    font-size: 12px;
+    background-color: #afb8c133;
+    color: #57601a;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+/* 載入中與錯誤提示文字 */
+.loading, .error {
+    text-align: center;
+    padding: 24px;
+    color: #57601a;
+}
